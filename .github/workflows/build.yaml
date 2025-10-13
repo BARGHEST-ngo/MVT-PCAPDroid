@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Build lists
-        run: python3 tools/mvt_to_blacklists.py
+        run: python3 tools/mvt_flatten.py
       - name: Commit and push if changed
         run: |
           git config user.name "automation"
